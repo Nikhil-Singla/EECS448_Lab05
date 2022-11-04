@@ -1,7 +1,7 @@
 function Validate()
 {
-    var initialPass = document.getElementById("first"); 
-    var secondPass = document.getElementById("second"); 
+    var initialPass = document.getElementById("first").value; 
+    var secondPass = document.getElementById("second").value; 
     if(initialPass != secondPass)
     {
         alert("Passwords Don't Match!")
