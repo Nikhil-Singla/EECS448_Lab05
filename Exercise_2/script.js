@@ -6,11 +6,13 @@ let images = ["https://miro.medium.com/max/500/1*ZhYNqU2y96_f3QkWq9oiWQ.jpeg",
 ]
 
 let start = 0
-var image = document.getElementById("img");
+// var image = document.getElementById('img') DOES NOT WORK HERE
+// This is because when the page load, this is supposedly empty?
 
 function next()
 {
-    if(start == 4)
+    var image = document.getElementById('img')
+    if(start >= 4)
     {
         start = 0
     }
@@ -23,12 +25,14 @@ function next()
 
 function previous()
 {
-    if(start == 0)
+    var image = document.getElementById('img')
+    if(start <= 0)
     {
-        start = 5
+        start = 4
     }
     else
     {
         start -= 1 
     }
+    image.src = images[start]
 }
