@@ -1,5 +1,5 @@
-### Web Development Portfolio (Introductory Level)
-#### EECS 448, Software Engineering: Lab 5
+## Web Development Portfolio (Introductory Level)
+### EECS 448, Software Engineering: Lab 5
 
 [EECS Peoples Page: Fall 2022]()
 <br/> 
