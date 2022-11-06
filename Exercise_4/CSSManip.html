@@ -2,21 +2,53 @@
 
 <html>
     <head>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="style.js"></script>      
     </head>
 
     <body align = "left">
 
-        <h1 align = "center">Exercise 4</h1>
+        <h1>Exercise 4</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada sodales odio, non mollis mauris convallis ac. Etiam tincidunt lorem vel ipsum dictum, ac euismod urna pulvinar. Pellentesque iaculis elit sed libero dictum, at interdum sapien venenatis. In tincidunt lacinia feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum semper pulvinar neque in interdum. Quisque elementum pharetra tellus, ut tincidunt nisi pharetra quis. Quisque nec mi nunc. Nunc ullamcorper tortor sit amet posuere porta. Nunc elementum dolor eget justo tincidunt facilisis. Morbi sapien augue, iaculis eu pharetra sed, pulvinar sit amet felis. Sed id aliquet odio. Phasellus non urna nibh.
-        </p>
-        <p>Ut scelerisque mauris sit amet dolor convallis, vel elementum quam tempus. Nunc congue volutpat nibh, sit amet fermentum justo suscipit in. Aliquam erat volutpat. Fusce sollicitudin, diam ut scelerisque placerat, massa lorem ornare mi, eu bibendum dolor odio sed eros. Proin tempus a diam sed dignissim. Proin ac consequat ipsum. Aenean sed dictum diam. Aenean pharetra, dui sed posuere commodo, eros est accumsan nunc, sit amet pellentesque massa leo nec sapien. Vivamus vel posuere mi. Nulla tempus sagittis leo semper ultrices. Morbi at laoreet quam. Pellentesque eget aliquam purus. Etiam at purus nibh. Aliquam vitae consectetur risus. Sed nulla turpis, posuere a semper id, finibus nec nunc.
-        </p>
-        <p>Praesent vel massa sed augue aliquam molestie ut mollis arcu. Sed non nisi nibh. Nullam in libero suscipit, blandit lectus sed, imperdiet sem. Etiam iaculis, tortor et dictum convallis, felis dolor scelerisque arcu, vitae vulputate metus est nec erat. Proin massa magna, tempus quis consequat non, pellentesque et est. Suspendisse quis ante eget nunc lacinia vestibulum quis pharetra sapien. Aenean eget lacus in ante malesuada dictum et sed sem. Sed sit amet aliquet nibh. Proin sed condimentum dolor. Suspendisse id feugiat risus, aliquet malesuada mauris. Donec viverra libero sed justo hendrerit, ut volutpat tortor pulvinar.
+        <p id = "p1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum malesuada sodales odio, non mollis mauris convallis ac. <br>
+            Etiam tincidunt lorem vel ipsum dictum, ac euismod urna pulvinar. Pellentesque iaculis elit sed libero dictum, at interdum sapien venenatis. <br>
+            In tincidunt lacinia feugiat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum semper pulvinar neque in interdum. <br>
+            Quisque elementum pharetra tellus, ut tincidunt nisi pharetra quis. Quisque nec mi nunc. Nunc ullamcorper tortor sit amet posuere porta. <br>
+            Nunc elementum dolor eget justo tincidunt facilisis. Morbi sapien augue, iaculis eu pharetra sed, pulvinar sit amet felis. Sed id aliquet odio. <br>
+            Phasellus non urna nibh. Nullam felis urna, eleifend a metus a, interdum vulputate nisl. Proin dignissim lacus quis ante accumsan pretium.
         </p>
 
-        <button onclick="Validate()">Validate</button>
-
+        <table style="width:100%">
+            <tr> 
+                <th>
+                    Border: [default value is 0]
+                </th>
+                <th>
+                    Background: [default value is 0]
+                </th>
+            </tr>
+            <tr>
+                <td style="width: 50%">
+                    <input type="text" id="bor_r" placeholder="Enter Red Value"><br><label>Red (0-255)</label><br><br>
+                    <input type="text" id="bor_g" placeholder="Enter Green Value"><br><label>Green (0-255)</label><br><br>
+                    <input type="text" id="bor_b" placeholder="Enter Blue Value"><br><label>Blue (0-255)</label><br><br>
+                    <input type="text" id="bor_width" placeholder="Enter Width"><br><label>Pixels(0-20px)</label><br><br>
+                    <button onclick="changeBorder()">Apply Border Changes</button>
+                </td> 
+                <td style="width: 50%">
+                    <input type="text" id="back_r" placeholder="Enter Red Value"><br><label>Red (0-255)</label><br><br>
+                    <input type="text" id="back_g" placeholder="Enter Green Value"><br><label>Green (0-255)</label><br><br>
+                    <input type="text" id="back_b" placeholder="Enter Blue Value"><br><label>Blue (0-255)</label><br><br>
+                    <button onclick="changeBackground()">Apply Background Changes</button> <br><br>
+                </td>
+            </tr>
+            <tr> 
+                <td align = "center">
+                    <button onclick="both()">Apply ALL Changes</button>
+                </td>
+            </tr>
+            
+            </table>
+          
     </body>
 </html>
