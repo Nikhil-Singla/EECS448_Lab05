@@ -1,9 +1,12 @@
+
+
 body{
     background-image: url("bg.gif");
     background-repeat: no-repeat;
     width: auto;
     height: auto;
 }
+
 .title{
     font-size: 40px;
     background-color: white;
@@ -15,24 +18,36 @@ body{
     display: inline-block;
 }
 
+.title:hover{
+    font-size: 50px;
+}
+
 .menu{
-    background-color: ;
+    background-color: white;
     width: 40%;
     display: inline-block;
 }
 
 .item{
     width: 50%;
-    padding: 7px;
-    border-radius: 5px;
+    padding: 24px;
+    border-radius: 8px;
     margin: 5px;
     background-color: rgb(24, 26, 151);
     display: inline-block;
-    width: auto;
+    width: 90%;
+}
+
+.item:hover{
+    background-color: black;
 }
 
 a{
     color: white;
+}
+
+a:hover{
+    color: red;
 }
 
 a:visited{
@@ -40,5 +55,5 @@ a:visited{
 }
 
 a:visited:hover{
-    color: red;
+    color: rgb(39, 238, 211);
 }
