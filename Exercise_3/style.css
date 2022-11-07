@@ -1,0 +1,51 @@
+.p1{
+    background-color: black;
+    color:antiquewhite;
+}
+
+.p2{
+    font-family: helvetica;
+    font-size: 16pt; 
+    background-color: white;
+    color:black;
+}
+
+.p3{
+    background-color: blue; 
+    color: red; 
+}
+
+.p3:hover{
+    background-color: red; 
+    color: blue
+}
+ 
+a{
+    color: white;
+}
+
+a:hover{
+    color: black;
+
+}
+
+a:visited{
+    color: skyblue;
+}
+
+a:visited:hover{
+    color: black;
+}
+  
+table{
+    background-color:darkgreen;
+    color:peru;
+}
+
+body{
+    background-color: aqua;
+    background-image: url(http://i.imgur.com/DcA5LNq.gif); 
+    background-size: 44.5%; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
