@@ -1,32 +1,28 @@
+body{
+    background-color: aqua;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/aa428070668927.5bab2b198b78b.gif); 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
 .p1{
     background-color: black;
     color:antiquewhite;
 }
 
 .p2{
-    font-family: helvetica;
-    font-size: 16pt; 
+    font-family: Arial;
     background-color: white;
     color:black;
 }
 
-.p3{
-    background-color: blue; 
-    color: red; 
-}
-
-.p3:hover{
-    background-color: red; 
-    color: blue
-}
- 
 a{
     color: white;
 }
 
 a:hover{
-    color: black;
-
+    color: red;
 }
 
 a:visited{
@@ -34,26 +30,19 @@ a:visited{
 }
 
 a:visited:hover{
-    color: black;
+    color: red;
 }
   
-table{
-    background-color:darkgreen;
+table, th, td{
+    background-color:black;
     color:peru;
+    border: 1px solid white;
 }
 
-body{
+table:hover{
     background-color: aqua;
-    background-image: url(http://i.imgur.com/DcA5LNq.gif); 
-    background-size: 100%; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
 }
 
 iframe{
     position:relative;
-}
-
-table{
-grid-template-columns: minmax(150px, 1.33fr) minmax(150px, 2.33fr);
 }
