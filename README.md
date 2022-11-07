@@ -1,7 +1,7 @@
 ## Web Development Portfolio (Introductory Level)
 ### EECS 448, Software Engineering: Lab 5
 
-[EECS Peoples Page: Fall 2022]()
+[EECS Peoples Page: Fall 2022](https://people.ku.edu/~n210s707/)
 <br/> 
 
 **Exercise 1**: Password validator <br />
