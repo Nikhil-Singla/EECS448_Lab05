@@ -45,7 +45,15 @@ table{
 body{
     background-color: aqua;
     background-image: url(http://i.imgur.com/DcA5LNq.gif); 
-    background-size: 44.5%; 
+    background-size: 100%; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
+}
+
+iframe{
+    position:relative;
+}
+
+table{
+grid-template-columns: minmax(150px, 1.33fr) minmax(150px, 2.33fr);
 }
