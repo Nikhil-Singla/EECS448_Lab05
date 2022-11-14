@@ -1,0 +1,10 @@
+form{
+    width: fit-content;
+    padding: 2px;
+    background-color: antiquewhite;
+}
+
+.Qform{
+    border: 1px solid black; 
+    padding: 8px;
+}
