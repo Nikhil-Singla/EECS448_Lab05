@@ -5,3 +5,11 @@ table, td {
 table {
     text-align: center;
 }
+
+.firstRow{
+    background-color: aqua;
+}
+
+.col{
+    background-color: aqua;
+}
