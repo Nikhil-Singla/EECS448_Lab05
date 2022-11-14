@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
     <?php
-        $RowOpen = "    <tr>\n";
-        $RowClose = "   </tr>\n";
+        $RowOpen = "<tr>\n";
+        $RowClose = "</tr>\n";
         $CellOpen = "   <td>";
-        $CellClose = "  </td>\n";
+        $CellClose = "</td>\n";
         $TableContainer = "";
         $length = 100;
         $firstCell = "  <td class=\"col\">";
         
-        echo "<tr class=\"firstRow\">\n<td></td>\n";
+        echo "<tr class=\"firstRow\">\n" . "    <td></td>\n";
         for ($i = 1; $i <= $size; $i++) 
         {
-            echo "<td>$i</td>\n";
+            echo "  <td>$i</td>\n";
         }
         echo "</tr>\n";
 
