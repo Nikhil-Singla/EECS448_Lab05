@@ -1,0 +1,60 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset='UTF-8'>
+		<link href='style.css' type='text/css' rel='stylesheet'/>
+		<script src='formChecker.js' type='text/javascript'></script>
+	</head>
+	<body>
+		<form onsubmit='return check()' action='customerBackend.php' method='post'>
+			<h2>Pokemon TCG</h2><br>
+			
+			<div>
+			    <input type='email' name='email' placeholder='Email'  autocomplete='on' id='email' required autofocus>
+			</div>
+			<br>
+
+			<div>
+			    <input type='password' name='password' id='passwordid' placeholder='Password' required>
+		    </div>
+		    <br>
+
+			<div>
+			    <p>
+                    Charizard  &nbsp; Price: $100.00<br>
+			        <input placeholder="Quantity" type='number' min='0' name='char' id='char' required>
+                </p>
+			</div>
+            <br>
+
+			<div>
+				<p>
+                    Blastoise  &nbsp; Price: $120.00<br> 
+			        <input  placeholder="Quantity"  type='number' min='0' name='blast' id='blast' required>
+                </p>
+			</div>
+            <br>
+
+			<div>
+			    <p>Venasaur &nbsp; Price: $80.00<br>
+			    <input placeholder="Quantity" type='number' min='0'  name='vena' id='vena' required><br></p> 
+			</div>
+			<br>
+
+			<h3>Shipping Option:</h3>
+			
+			<input type='radio' name='shipping' value='Free' id='ship' required>
+			<label for="Free">Free Shipping</label>
+			<input type='radio' name='shipping' value='Standard' id='ship'required>
+			<label for="Standard">$5.00 3 Day Shipping</label>
+			<input type='radio' name='shipping' value='Overnight'id='ship' required>
+			<label for="Overnight">$50.00 Overnight Shipping</label>
+			<br>
+			<br>
+			<input type='submit'><br>
+<br>
+
+			<input type='reset'>
+		</form>
+	</body>
+</html>
