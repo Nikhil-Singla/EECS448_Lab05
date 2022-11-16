@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
     <?php
-        $RowOpen = "<tr>\n";
-        $RowClose = "</tr>\n";
-        $CellOpen = "   <td>";
-        $CellClose = "</td>\n";
+        $RowOpen = "<tr>";
+        $RowClose = "</tr>";
+        $CellOpen = "<td>";
+        $CellClose = "</td>";
         $TableContainer = "";
         $length = 100;
-        $firstCell = "  <td class=\"col\">";
+        $firstCell = "<td class=\"col\">";
         
-        echo "<tr class=\"firstRow\">\n" . "    <td></td>\n";
-        for ($i = 1; $i <= $size; $i++) 
+        echo "<tr class=\"firstRow\">" . "<td></td>";
+        for ($i = 1; $i <= $length; $i++) 
         {
-            echo "  <td>$i</td>\n";
+            echo "<td>$i</td>";
         }
-        echo "</tr>\n";
+        echo "</tr>";
 
         for($i = 1; $i<=$length; $i++)
         {
-            $TableContainer += $RowOpen;
-            $TableContainer += $firstCell + $i + $RowClose;
+            $TableContainer .= $RowOpen;
+            $TableContainer .= $firstCell . $i . $CellClose;
             
             for($j=1; $j<=$length; $j+=1)
             {
-                $TableContainer += $CellOpen + ($i*$j) + $RowClose;
+                $TableContainer .= $CellOpen . ($i*$j) . $CellClose;
             }
-            $TableContainer += $RowClose;
+
+            $TableContainer .= $RowClose;
         }
         echo $TableContainer;
     ?>
