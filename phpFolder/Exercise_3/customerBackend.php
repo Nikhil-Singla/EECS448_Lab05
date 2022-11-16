@@ -45,7 +45,7 @@ $totalPrice = $charTotal + $blastTotal + $venaTotal + $shippingCost;
         <br>
 
         <p>
-            Entered Password is: <?php echo $password;?>
+            <div class='box'>Entered Password is: <?php echo $password;?></div>
         </p>
         <br>
 
@@ -89,9 +89,9 @@ $totalPrice = $charTotal + $blastTotal + $venaTotal + $shippingCost;
                     <p><?php echo $blast; ?></p>
                 </td>
 
-                <td><?php echo $charCost; ?></td>
+                <td><?php echo $blastCost; ?></td>
                 
-                <td><?php echo $charTotal; ?></td>
+                <td><?php echo $blastTotal; ?></td>
 
             </tr>
 

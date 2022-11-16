@@ -15,3 +15,8 @@ tbody tr:nth-child(odd) {
 caption {
     font-size: 0.8rem;
 }
+
+.box{
+    border: 2px solid black;
+    
+}
